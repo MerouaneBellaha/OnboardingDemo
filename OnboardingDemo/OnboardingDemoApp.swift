@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct OnboardingDemoApp: App {
+
+    let state = AppState()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView().environmentObject(state)
         }
     }
 }

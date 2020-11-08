@@ -11,6 +11,12 @@
 		CBE77ACB25588B2C00FBCCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77ACA25588B2C00FBCCCB /* ContentView.swift */; };
 		CBE77ACD25588B2E00FBCCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE77ACC25588B2E00FBCCCB /* Assets.xcassets */; };
 		CBE77AD025588B2E00FBCCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE77ACF25588B2E00FBCCCB /* Preview Assets.xcassets */; };
+		CBE77AD925588B6600FBCCCB /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77AD825588B6600FBCCCB /* OnboardingState.swift */; };
+		CBE77ADC25588C3B00FBCCCB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77ADB25588C3B00FBCCCB /* AppState.swift */; };
+		CBE77ADF25588CE400FBCCCB /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77ADE25588CE400FBCCCB /* LandingView.swift */; };
+		CBE77AE225588DAA00FBCCCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77AE125588DAA00FBCCCB /* LoginView.swift */; };
+		CBE77AE525588E2000FBCCCB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77AE425588E2000FBCCCB /* OnboardingView.swift */; };
+		CBE77AEA2558968E00FBCCCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE77AE92558968E00FBCCCB /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		CBE77ACC25588B2E00FBCCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE77ACF25588B2E00FBCCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBE77AD125588B2E00FBCCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE77AD825588B6600FBCCCB /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		CBE77ADB25588C3B00FBCCCB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CBE77ADE25588CE400FBCCCB /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		CBE77AE125588DAA00FBCCCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CBE77AE425588E2000FBCCCB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CBE77AE92558968E00FBCCCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 				CBE77ACC25588B2E00FBCCCB /* Assets.xcassets */,
 				CBE77AD125588B2E00FBCCCB /* Info.plist */,
 				CBE77ACE25588B2E00FBCCCB /* Preview Content */,
+				CBE77AD825588B6600FBCCCB /* OnboardingState.swift */,
+				CBE77AE92558968E00FBCCCB /* HomeView.swift */,
+				CBE77ADB25588C3B00FBCCCB /* AppState.swift */,
+				CBE77AE125588DAA00FBCCCB /* LoginView.swift */,
+				CBE77ADE25588CE400FBCCCB /* LandingView.swift */,
+				CBE77AE425588E2000FBCCCB /* OnboardingView.swift */,
 			);
 			path = OnboardingDemo;
 			sourceTree = "<group>";
@@ -138,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE77AE225588DAA00FBCCCB /* LoginView.swift in Sources */,
+				CBE77AD925588B6600FBCCCB /* OnboardingState.swift in Sources */,
+				CBE77ADF25588CE400FBCCCB /* LandingView.swift in Sources */,
 				CBE77ACB25588B2C00FBCCCB /* ContentView.swift in Sources */,
 				CBE77AC925588B2C00FBCCCB /* OnboardingDemoApp.swift in Sources */,
+				CBE77AEA2558968E00FBCCCB /* HomeView.swift in Sources */,
+				CBE77ADC25588C3B00FBCCCB /* AppState.swift in Sources */,
+				CBE77AE525588E2000FBCCCB /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

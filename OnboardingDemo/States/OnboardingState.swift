@@ -14,13 +14,21 @@ enum OnboardingState: Int, CaseIterable {
     case state2 = 2
     case state3 = 3
 
-    func nextState() -> OnboardingState {
-        return OnboardingState(rawValue: rawValue + 1) ?? OnboardingState.state0
+//    func nextState() -> OnboardingState {
+//        return OnboardingState(rawValue: rawValue + 1) ?? OnboardingState.state0
+//    }
+
+    mutating func nextState() {
+        self = OnboardingState(rawValue: rawValue + 1) ?? OnboardingState.state0
     }
 
-    func previousState() -> OnboardingState {
-        return OnboardingState(rawValue: rawValue - 1) ?? OnboardingState.state0
+    mutating func previousState() {
+        self = OnboardingState(rawValue: rawValue - 1) ?? OnboardingState.state0
     }
+
+//    func previousState() -> OnboardingState {
+//        return OnboardingState(rawValue: rawValue - 1) ?? OnboardingState.state0
+//    }
 
     var title: String {
         switch self {

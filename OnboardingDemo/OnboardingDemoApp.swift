@@ -14,7 +14,7 @@ struct OnboardingDemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LandingView().environmentObject(state)
+            DispatchView().environmentObject(state)
         }
     }
 }

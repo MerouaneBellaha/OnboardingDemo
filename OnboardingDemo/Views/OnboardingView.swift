@@ -11,32 +11,32 @@ struct OnboardingView: View {
 
     // MARK: - Properties
 
-    let onboardingState: OnboardingState
     @EnvironmentObject var state: AppState
 
     // MARK: - Body
 
     var body: some View {
         VStack {
-            if onboardingState == .state3 {
-                Button(onboardingState.title) {
+            if state.onboardingState == .state3 {
+                Button(state.onboardingState.title) {
                     UserDefaults.standard.set(true, forKey: "isOnboarded")
-                    state.user.userState = .shouldLogin
+                    state.user.state = .shouldLogin
                 }
             } else {
-                Text(onboardingState.title)
+                Text(state.onboardingState.title)
             }
             HStack {
-                if onboardingState != .state0 {
+                if state.onboardingState != .state0 {
                     Button("previous") {
-                        state.onboardingState = onboardingState.previousState()
+//                        state.onboardingState = state.onboardingState.previousState()
+                        state.onboardingState.previousState()
                     }
                 }
                 Spacer()
-                if onboardingState != .state3 {
+                if state.onboardingState != .state3 {
                     Button("next") {
-                        state.onboardingState = onboardingState.nextState()
-                        print(state.onboardingState.rawValue)
+                        state.onboardingState.nextState()
+//                        state.onboardingState = state.onboardingState.nextState()
                     }
                 }
             }

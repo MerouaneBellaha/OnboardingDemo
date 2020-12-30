@@ -5,7 +5,7 @@
 //  Created by Merouane Bellaha on 08/11/2020.
 //
 
-import Foundation
+import SwiftUI
 
 struct HomeView: View {
 
@@ -17,7 +17,7 @@ struct HomeView: View {
 
     var body: some View {
         Button("logout") {
-            state.user.userState = .shouldLogin
+            state.user.state = .shouldLogin
         }
     }
 }

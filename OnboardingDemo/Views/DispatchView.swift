@@ -1,5 +1,5 @@
 //
-//  LandingView.swift
+//  DispatchView.swift
 //  OnboardingDemo
 //
 //  Created by Merouane Bellaha on 08/11/2020.
@@ -9,7 +9,7 @@ import Foundation
 
 import SwiftUI
 
-struct LandingView: View {
+struct DispatchView: View {
 
     // MARK: - Properties
 
@@ -18,11 +18,9 @@ struct LandingView: View {
     // MARK: - Body
 
     var body: some View {
-
-        switch state.user.userState {
+        switch state.user.state {
         case .shouldBeOnboarded :
-            return AnyView(OnboardingView(onboardingState: state.onboardingState)
-                            .environmentObject(state))
+            return AnyView(OnboardingView().environmentObject(state))
         case .shouldLogin :
             return AnyView(LogInView().environmentObject(state))
         case .isLogin :

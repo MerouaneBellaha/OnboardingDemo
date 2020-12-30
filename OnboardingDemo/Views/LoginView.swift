@@ -18,11 +18,11 @@ struct LogInView: View {
     var body: some View {
         VStack {
             Button("login") {
-                state.user.userState = .isLogin
+                state.user.state = .isLogin
             }
             Button("isOnBoarded to false") {
                 UserDefaults.standard.set(false, forKey: "isOnboarded")
-                state.user.userState = .shouldBeOnboarded
+                state.user.state = .shouldBeOnboarded
                 state.onboardingState = .state0
             }
         }

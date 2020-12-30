@@ -13,7 +13,7 @@ struct User {
         case shouldBeOnboarded, shouldLogin, isLogin
     }
 
-    var userState: UserState = .shouldBeOnboarded
+    var state: UserState = .shouldBeOnboarded
 }
 
 class AppState: ObservableObject {
@@ -27,7 +27,7 @@ class AppState: ObservableObject {
 
     init() {
         user = User()
-        user.userState = getUserState()
+        user.state = getUserState()
     }
 
     // MARK: - Methods

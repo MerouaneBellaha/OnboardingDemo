@@ -17,26 +17,24 @@ struct OnboardingView: View {
 
     var body: some View {
         VStack {
-            if state.onboardingState == .state3 {
-                Button(state.onboardingState.title) {
+            if state.onboardingStep.isLastStep {
+                Button(state.onboardingStep.title) {
                     UserDefaults.standard.set(true, forKey: "isOnboarded")
                     state.user.state = .shouldLogin
                 }
             } else {
-                Text(state.onboardingState.title)
+                Text(state.onboardingStep.title)
             }
             HStack {
-                if state.onboardingState != .state0 {
+                if !state.onboardingStep.isFirstStep {
                     Button("previous") {
-//                        state.onboardingState = state.onboardingState.previousState()
-                        state.onboardingState.previousState()
+                        state.onboardingStep.previousStep()
                     }
                 }
                 Spacer()
-                if state.onboardingState != .state3 {
+                if !state.onboardingStep.isLastStep {
                     Button("next") {
-                        state.onboardingState.nextState()
-//                        state.onboardingState = state.onboardingState.nextState()
+                        state.onboardingStep.nextStep()
                     }
                 }
             }

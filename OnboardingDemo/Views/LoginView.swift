@@ -23,7 +23,7 @@ struct LogInView: View {
             Button("isOnBoarded to false") {
                 UserDefaults.standard.set(false, forKey: "isOnboarded")
                 state.user.state = .shouldBeOnboarded
-                state.onboardingState = .state0
+                state.onboardingStep = .step0
             }
         }
     }

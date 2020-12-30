@@ -21,7 +21,7 @@ class AppState: ObservableObject {
     // MARK: - Published Properties
 
     @Published var user: User! = nil
-    @Published var onboardingState: OnboardingState = .state0
+    @Published var onboardingStep: OnboardingStep = .step0
 
     // MARK: - Init
 
